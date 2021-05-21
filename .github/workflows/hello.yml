@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - id: check out repository
+    - id: one
       uses: actions/checkout@v2
       
-    - id: say hello
+    - id: two
       run: echo hello
       
-    - id: multiline script
+    - id: three
       run: |
         echo Greeting
         echo good morning
