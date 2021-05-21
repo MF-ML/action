@@ -20,5 +20,4 @@ jobs:
       uses: actions/checkout@v2
     - name: display Bash env variables
       run: "Get-ChildItem ENV:"
-      run: env
     
