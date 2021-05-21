@@ -4,6 +4,9 @@ on: push
 
 jobs:
   echo:
+  
+    runs-on: windows-latest
+    
     steps:
-    - name: echo hello
+    - name: say hello
       run: echo hello
