@@ -1,12 +1,21 @@
 name: hello
 
-on: push
+on: 
+- push
 
 jobs:
   echo:
   
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     
     steps:
+    - name: check out repository
+      uses: actions/checkout@v2
+      
     - name: say hello
       run: echo hello
+      
+    - name: multiline script
+      run: |
+        echo Greeting
+        echo good morning
