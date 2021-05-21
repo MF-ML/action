@@ -1,0 +1,24 @@
+name: display env
+
+on: 
+- push
+
+jobs:
+  job1:
+    name: runs on ubuntu
+    runs-on: ubuntu-latest    
+    steps:
+    - name: ckeck out repository
+      uses: actions/checkout@v2
+    - name: display Bash env variables
+      run: env
+  job2:
+    name: runs on windows
+    runs-on: windows-latest
+    steps:
+    - name: ckeck out repository
+      uses: actions/checkout@v2
+    - name: display Bash env variables
+      run: "Get-ChildItem ENV:"
+      run: env
+    
