@@ -12,6 +12,9 @@ jobs:
     - id: one
       uses: actions/checkout@v2
       
+    - name: from docker
+      uses: docker://hello-world:latest  
+      
     - id: two
       run: echo hello
       
