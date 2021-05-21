@@ -1,0 +1,9 @@
+name: hello
+
+on: push
+
+jobs:
+  echo:
+    steps:
+    - name: echo hello
+      run: echo hello
